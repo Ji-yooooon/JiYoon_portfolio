@@ -1,0 +1,89 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+*{margin: 0; padding: 0; font-family: 'Noto Sans KR', sans-serif;}
+ul{list-style: none;}
+a{text-decoration: none; color: #000;}
+html, body{width: 100%; height: 100%;}
+
+/* 힐링 */
+.content{max-width: 100%; background-color: #fff; margin-top: 100px; overflow: hidden;}
+
+.content .content-wrap{max-width: 1200px; margin: 0 auto; background-color: #fff; position: relative; }
+
+.content .content-wrap .content1{max-width: 1200px; height: 1000px;}
+
+.content .content-wrap .content1 .title{width: 400px; height: 200px; padding: 150px 0 0 80px;}
+
+.content .content-wrap .content1 .title h3{color: #f57e35; font-size: 50px; font-weight: 900;}
+.content .content-wrap .content1 .title h3:nth-child(1):after{content: ""; position: absolute; width: 50px; height: 5px; background-color: #256d85; top: 208px; }
+.content .content-wrap .content1 .title h3:nth-child(2):after{content: ""; position: absolute; width: 50px; height: 5px; background-color: #256d85; top: 275px; margin-left: 5px; }
+
+.content .content-wrap .content1 .sub-title1{width: 200px; padding: 80px;}
+.content .content-wrap .content1 .sub-title1 h3{
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: #f57e35; 
+    color: #fff; font-size: 55px; font-weight: 900;}
+.content .content-wrap .content1 .sub-title1 h3 p{font-size: 10px; font-weight: 900; position: absolute; left: 43px; margin-top: 37px;}
+
+.content .content-wrap .content1 .txt1{width: 350px; padding-left: 80px; }
+.content .content-wrap .content1 .txt1 p{font-size: 18px; line-height: 1.8em;}
+
+.content .content-wrap .content1 .h-img img{position: absolute; right: 50px; top: 350px; opacity: 0; transition: 0.5s; }
+.content .content-wrap .content1 .h-img img:nth-child(1){
+    opacity: 1;
+}
+.line{position: absolute; top: 560px; left: 275px;}
+
+
+/* 취미 */
+.content .content-wrap .content2{max-width: 1200px; height: 800px; display: flex; justify-content: center; align-items: center; position: relative;}
+.content .content-wrap .content2 .box{width: 360px; height: 511px; margin: 5px; text-align: center; }
+.content .content-wrap .content2 .box:nth-child(1),
+.content .content-wrap .content2 .box:nth-child(3){margin-bottom: 50px; filter: grayscale(100%); transition: 0.8s;}
+.content .content-wrap .content2 .box:nth-child(1):hover,
+.content .content-wrap .content2 .box:nth-child(3):hover{margin-bottom: 50px; filter: none;  transform: scale(105%);}
+
+
+.content .content-wrap .content2 .box .sub-title2 p{
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: #f57e35; 
+    color: #fff; font-size: 10px; margin: 10px 0 10px 0;}
+.content .content-wrap .content2 .box .sub-title2 h3{-webkit-font-smoothing: antialiased;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: #f57e35;
+     color: #fff; font-size: 55px; font-weight: 900; 
+     margin-top: 20px;}
+.content .content-wrap .content2 .box .txt2{width: 310px; text-align: left; margin: 0 auto; padding-top: 50px; font-size: 18px; font-weight: 400; line-height: 1.7em;}
+
+.line-2{position: absolute; bottom: -165px; right: -359px;}
+
+/* 푸터 */
+.footer{max-width: 100%; height: 190px; background-color: #fff; position: relative; padding-top: 50px;}
+.footer-title {max-width : 100%; text-align: center; padding-top: 100px;}
+/* .footer-title .txt h2{padding: 10px 0; color: #256d85; font-size: 26px;} */
+
+.footer-title .txt{font-size: 26px; color: #256d85; padding: 10px 0; font-weight: 700; line-height: 50px;
+    animation: cursor 0.9s ease infinite; }
+.footer-title .txt::after{content: "│"; font-size: 26px; animation: blink 0.5s step-end infinite; color: #256d85;}
+    @keyframes blink {
+        0% {
+          opacity:1;
+        }
+        49% {
+          opacity:1;
+        }
+        50% {
+          opacity:0;
+        }
+        100% {
+          opacity:0;
+        }
+      }
+
+.footer .circle{position: absolute; bottom: -150px;}
+

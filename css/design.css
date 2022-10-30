@@ -1,0 +1,147 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+*{margin: 0; padding: 0; font-family: 'Noto Sans KR', sans-serif;}
+ul{list-style: none;}
+a{text-decoration: none; color: #000;}
+html, body{width: 100%; height: 100%;}
+
+
+/* 풀페이지 설정 , 툴팁 */
+/* .fp-slidesNav{text-align: center; }
+
+#fp-nav ul{margin-left: 320px; display: grid; gap: 10px;}
+
+
+#fp-nav ul li .fp-tooltip{
+    color: #fff; background-color: #256d85;
+    padding: 5px 20px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+#fp-nav ul li .fp-tooltip.on{
+    width: auto; opacity: 1;
+}
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span{background-color: #f57e35;} */
+
+
+/* 컨텐츠 */
+/* .content{max-width: 100%; height: 100%;}
+.content .content-wrap{max-width: 1200px; height: 100%; margin: 0 auto;}
+.content .content-wrap .txt-content{width: 442px; height: 210px; position: relative; top: 400px; margin-left: 250px;}
+.content .content-wrap .txt-content h1 span{
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1.4px;
+    -webkit-text-stroke-color: #f57e35;  
+    color: #fffde7; font-size: 45px; margin-right: 10px;}
+.content .content-wrap .txt-content h1{font-size: 40px; color: #256d85;}
+.content .content-wrap .txt-content p{display: inline-block; margin-left: 65px; position: relative; top: 10px; color: #256d85; font-weight: 500;}
+
+.content .content-wrap .txt-content .btn-process{position: relative; left: 65px; top: 65px; width: 150px; height: 35px; border: 1px solid #256d85; background-color: #256d85; border-radius: 20px; transition: all 0.7s; box-shadow: 10px 5px 10px rgba(0, 0, 0, 15%); color: #fff; cursor: pointer;}
+.content .content-wrap .txt-content .btn-process:hover{background-color: #fff; color: #256d85; font-weight: 500;}
+
+.content .content-wrap img{float: right; margin-top: 67px;} */
+
+/* 모달창 */
+.window{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 253, 231, 0.795);
+    top: 0; left: 0;
+    display: none;
+    z-index: 9999;
+}
+.window-content{
+    width: 52.95%; height: 95%;
+    position: fixed;
+    background-color: #fff;
+    margin: 0 0 20px; left: 50%;
+    transform: translateX(-50%);
+    border-radius: 0 0 50px 50px;
+    overflow-y: scroll;
+    display: none;
+    z-index: 10000;
+}
+/* 모달 스크롤바 */
+.window-content::-webkit-scrollbar{
+    width: 17px;
+    /* background-color: #fff; */
+}
+.window-content::-webkit-scrollbar-thumb{
+    background-color: #f57e35;
+    border-radius: 20px;
+    background-clip: padding-box;
+    border: 3px solid transparent;
+}
+.window-content::-webkit-scrollbar-track{
+    
+    background-color: rgb(255, 238, 190);
+    border-radius: 20px;
+    box-shadow: inset 0px 0px 10px white;
+    
+}
+.window-content img{width: 100%;}
+
+/* 반응형 */
+/* @media screen and (max-width:1200px) and (min-width:641px) {
+    #fp-nav ul{margin-left: 120px;}
+    .content .content-wrap img{width: 30%; margin-right: 80px; }
+}
+
+@media screen and (max-width:640px) {
+    #fp-nav ul{margin-left: 20px;}
+    .content .content-wrap img{width: 50%; margin-right: 80px; }
+} */
+
+.section{width: 100%; height: 100%; overflow: hidden;}
+
+/* 슬릭 */
+.content{max-width: 100%; height: 100%; padding-top: 230px;}
+.content .content-wrap{max-width: 1200px; height: 100%; margin: 0 auto; position: relative;}
+
+.content .content-wrap .d-title{position: absolute; top: 300px; display: none; text-align: center; width: 200px; height: 500px;}
+.content .content-wrap .d-title.on{display: block;}
+
+.content .content-wrap .d-title h1{font-size: 60px; font-weight: 900; 
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: #256d85;}
+.content .content-wrap .d-title h2{font-size: 35px; color: #f57e35;}
+
+/* process */
+.content .content-wrap .d-title .process{width: 200px; height: 45px; background-color: #256d85; border-radius: 20px; margin-top: 160px; display: flex; justify-content: center; align-items: center; transition: all 0.5s;}
+.content .content-wrap .d-title .process a{color: #fff; font-size: 22px; line-height: 20px;}
+.content .content-wrap .d-title .process:hover{background-color: #f57e35; }
+.content .content-wrap .d-title .process:hover a{font-weight: 700; }
+
+/* 슬릭 */
+.content .content-wrap .slick{ max-width: 60%; height: 720px; margin: 0 auto; text-align: center; display: flex; align-items: center; }
+
+.content .content-wrap .slick .slick-item{position: relative; width: 100%; height: 680px; overflow: hidden; box-sizing: border-box; display: flex !important; align-items: center;}
+
+.content .content-wrap .slick .slick-item img{width: 80%; margin: 0 auto; }
+
+.content .content-wrap .slick .slick-item p{display: none; position: absolute;}
+.content .content-wrap .slick .slick-item:hover p{position: absolute; width: 300px; height: 50px; background-color: #ddd; top: 20px; left: 30%; line-height: 50px; display: block; }
+
+
+/* 슬릭네비 */
+.content .content-wrap .slider-nav{ max-width: 50%; margin: 0 auto; }
+
+.slick-next:before{content: "▶"; color: #256d85; margin-left: 20px;} 
+.slick-prev:before{content: "◀"; color: #256d85; margin-left: -40px;} 
+
+.content .content-wrap .slider-nav .slider-item{transition: 0.5s;}
+.content .content-wrap .slider-nav:hover .slider-item{opacity: 0.3;}
+.content .content-wrap .slider-nav .slider-item:hover{opacity: 1;}
+
+.slick-dots li button:before{font-size: 30px; color: #f57e35;}
+.slick-dots li.slick-active button:before{color: #f57e35;}
+
+
+
+

@@ -1,0 +1,82 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+*{margin: 0; padding: 0; font-family: 'Noto Sans KR', sans-serif;}
+ul{list-style: none;}
+a{text-decoration: none; color: #000;}
+html, body{width: 100%; height: 100%;}
+
+
+/* 개발환경 설정, 툴팁 */
+.fp-slidesNav{text-align: center;}
+
+#fp-nav ul{margin-left: 320px; display: grid; gap: 10px;}
+
+#fp-nav ul li .fp-tooltip.on{
+    width: auto; opacity: 1;
+}
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span{background-color: #f57e35;}
+
+/* 컨텐츠 */
+.content{max-width: 100%; height: 100%;}
+.content .content-wrap{max-width: 1200px; height: 100%; margin: 0 auto;}
+.content .content-wrap .web-content{width: 400px; height: 410px; top: 250px; position: relative; left: 80px;}
+
+
+
+
+/* 넘버링 */
+.content .number{position: relative; width: 80px; height: 80px; top: 480px; left: 200px;}
+.content .number > h1{font-size: 80px; font-weight: 900;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: #f57e35;
+}
+
+
+
+/* 목업 */
+.content .content-wrap .pc{width: 600px;  position: relative; bottom: 160px; overflow: hidden; display: flex; left: 600px;}
+.content .content-wrap .pc img{width: 100%;}
+/* 목업 이미지 */
+.section:nth-child(1) .content .content-wrap .pc::after{content: ""; position: absolute; width: 95.1%; height: 61%; left: 15px; top: 14.3px; background: url(../images/2.web&app/1.w-hollys.png) center top no-repeat; background-size: cover;  transition: 7s linear; }
+.section:nth-child(2) .content .content-wrap .pc::after{content: ""; position: absolute; width: 95.1%; height: 61%; left: 15px; top: 14.3px; background: url(../images/2.web&app/2.w-hos.jpg) center top no-repeat; background-size: cover;  transition: 7s linear; }
+.section:nth-child(3) .content .content-wrap .pc::after{content: ""; position: absolute; width: 95.1%; height: 61%; left: 15px; top: 14.3px; background: url(../images/2.web&app/3.cartier.png) center top no-repeat; background-size: cover;  transition: 7s linear; }
+
+/* 목업 스크롤 */
+.section:nth-child(1n) .content .content-wrap > div:hover::after{background-position: center bottom;}
+
+
+
+
+
+/* 타이틀 */
+.content .content-wrap .web-content .title-box{width: 199px; height: 27px; background-color: #256d85; position: relative; text-align: center; line-height: 27px;}
+.content .content-wrap .web-content .title-box p{color: #fff; font-size: 20px;}
+.content .content-wrap .web-content h1{color: #256d85; font-size: 40px;}
+.content .content-wrap .web-content > p{color: #555; font-weight: 500;}
+
+.content .content-wrap .web-content .desc{display: flex; justify-content: flex-start; gap: 35px; top: 160px; position: relative; font-size: 19px;}
+.content .content-wrap .web-content .desc:nth-child(5){margin-top: 10px;}
+.content .content-wrap .web-content .desc ul li{display: inline-block; margin-right: 8px; color: #256d85; font-size: 19px;}
+.content .content-wrap .web-content .desc:nth-child(5) p:nth-child(2){color: #256d85;}
+
+.content .content-wrap .web-content .desc p:nth-child(1),
+.content .content-wrap .web-content .desc p:nth-child(3){font-weight: 600;}
+
+
+/* 프로세스 버튼 */
+.content .content-wrap .web-content .btn-wrap ul{ display: flex; justify-content: flex-start; margin-top: 200px; gap: 8px; }
+.content .content-wrap .web-content .btn-wrap ul li{ padding: 8px 17px;  border: 1px solid #256d85; background-color: #256d85; border-radius: 22px; transition: all 0.7s; box-shadow: 10px 5px 10px rgba(0, 0, 0, 15%);}
+.content .content-wrap .web-content .btn-wrap ul li a{color: #fff; font-size: 15px;}
+
+
+.content .content-wrap .web-content .btn-wrap ul li:hover{
+    background-color: #fff; 
+}
+.content .content-wrap .web-content .btn-wrap ul li:hover a{
+     color: #256d85; 
+}
+
+/* 2n */

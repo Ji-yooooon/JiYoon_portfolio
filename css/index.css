@@ -1,0 +1,81 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+*{margin: 0; padding: 0; font-family: 'Noto Sans KR', sans-serif;}
+ul{list-style: none;}
+a{text-decoration: none; color: #000;}
+
+
+
+.content-wrap{
+    width: 100%; min-height: 100vh;
+}
+
+.content-wrap .content{
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    transition: 0.5s;
+    z-index: 1;
+    
+}
+.content-wrap .content.on{z-index: 11; width: 30%;}
+.content-wrap .content:nth-child(1){left: 0; background-color: #256d85; }
+.content-wrap .content:nth-child(2){left: 20%; 
+background-image: url(../images/0.main/main-about.png); background-size: cover;filter: opacity(0.4) drop-shadow(0 0 0 #fffde7);}
+.content-wrap .content:nth-child(3){left: 40%; background-image: url(../images/0.main/main-web.png); background-size: cover; filter: opacity(0.4) drop-shadow(0 0 0 #fffde7);}
+.content-wrap .content:nth-child(4){left: 60%; background-image: url(../images/0.main/main-design.png); background-size: cover; filter: opacity(0.4) drop-shadow(0 0 0 #fffde7);}
+.content-wrap .content:nth-child(5){right: 0%; background-image: url(../images/0.main/main-life.png); background-size: cover; filter: opacity(0.4) drop-shadow(0 0 0 #fffde7);}
+
+/* filter: opacity(0.4) drop-shadow(0 0 0 #fffde7); */
+
+
+/* 로고 */
+.content-wrap .content .logo{
+    margin-top: 440px;
+    margin-right: 100px;
+    text-align: right;
+}
+
+.content-wrap .content .desc{
+    color: #fff;     
+    margin-right: 100px;
+    margin-top: 25px;
+    text-align: right;
+}
+.content-wrap .content .desc p{
+    margin: 5px 0;
+    
+}
+
+
+
+/* 카테고리 */
+
+
+.content-wrap .content .menu{
+    width: 100%; height: 100%;
+
+}
+.content-wrap .content.on{
+    
+    filter: opacity(1) drop-shadow(0 0 0 #fffde7);
+}
+.content-wrap .content .menu a{
+    color: #fff; 
+    font-size: 20px; font-weight: 800;
+    width: 120px; height: 30px; text-align: center;
+    margin-top: 570px;
+    margin-left: 250px;
+    display: inline-block; 
+    position: fixed;
+    
+}
+.content-wrap .content .menu:hover a{
+    background-color: #256d85; 
+    color: #fff;
+    width: 120px; height: 30px; 
+    text-align: center;
+    
+    position: fixed;
+}
+
