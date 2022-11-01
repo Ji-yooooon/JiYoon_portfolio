@@ -5,9 +5,11 @@ ul{list-style: none;}
 a{text-decoration: none; color: #000;}
 html, body{width: 100%; height: 100%;}
 
-.header{width: 100%; height: 245px; position: fixed; background-color: #fff; z-index: 1; top: 0; background: url(../images/p-1-nav.png); background-size: cover;}
+.header{width: 100%; height: 245px; position: fixed; background-color: #fff; z-index: 999; top: 0; background: url(../images/p-1-nav.png); background-size: cover;}
 
-.header .header-wrap{max-width: 1200px; height: 100vh; margin: 0 auto;}
+
+
+.header .header-wrap{max-width: 1200px; height: 245px; margin: 0 auto;}
 
 /* .header.on{width: 100%; height: 87px; position: fixed; background-color: #fff; z-index: 999; top: 0; background-color: #000;} */
 
@@ -21,7 +23,7 @@ html, body{width: 100%; height: 100%;}
 /* .header.on{height: 85px; background-color: #000; background: none;}
 .header .header-wrap .logo.on{width: 60%;}
 .header .header-wrap .nav.on{max-width: 80%;} */
-.header .header-wrap .nav ul li a.on{color: #be0000;}
+.header .header-wrap .nav ul li a.on{color: #be0000; font-weight: 900;}
 
 
 /* 풀페이지 설정 */
@@ -35,7 +37,7 @@ html, body{width: 100%; height: 100%;}
 
 
 
-/* section1 */
+/* 1페이지 */
 .section .content1{max-width: 100%; height: 100vh; background-color: #fff; background-image: url(../images/p-full1.png) ; background-size: cover; background-position: center center;}
 .section .content1 .content1-wrap{max-width: 1200px; height: 100vh; margin: 0 auto;}
 
