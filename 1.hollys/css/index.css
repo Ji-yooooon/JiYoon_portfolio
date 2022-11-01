@@ -165,11 +165,12 @@ a{text-decoration: none; color: #000;}
 /* 추천 메뉴 슬라이드 */
 .menu-content .content-wrap .swiper-backface-hidden .swiper-slide{
     transform: scale(0.7) translateZ(0);
-    transition: 0.4s; margin-top: 40px;
+    transition: 0.5s; margin-top: 40px;
 }
 .menu-content .content-wrap .swiper-backface-hidden .swiper-slide:hover::after{
-    content: attr(data-text); position: absolute; width: 80%;height: 90%; margin-top: 25px; margin-left: 40px; font-size: 25px; text-align: center; color: #fff; line-height: 300px;
-    background-color: #730b14; opacity: 70%; left: 0; top: 0; border-radius: 50%; 
+    content: attr(data-text); position: absolute; width: 80%;height: 90%; margin-top: 180px; margin-left: 40px; font-size: 22px; text-align: center; color: rgb(87, 87, 87); line-height: 300px;
+    background-color: none; left: 0; top: 0; border-radius: 50%; 
+    
 }
 
 
@@ -329,7 +330,7 @@ a{text-decoration: none; color: #000;}
     bottom:0px;
     background-color: #fff;
     }
-.about-txt .about-txt-wrap .txt-box .txt-box-rolling{animation: up 8s infinite; display: flex; flex-direction: column; height: 61px;}
+.about-txt .about-txt-wrap .txt-box .txt-box-rolling{animation: up 6s infinite; display: flex; flex-direction: column; height: 61px; }
 .about-txt .about-txt-wrap .txt-box h1{color: #fff; font-size: 35px; font-weight: 700; position: relative;}
 
 @keyframes up {
