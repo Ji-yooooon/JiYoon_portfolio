@@ -1,6 +1,6 @@
 // alert()
 $(document).ready(function () {
-   
+
     $(".top-btn").click(function(){
         $("html, body").stop().animate({
             scrollTop: 0
@@ -15,7 +15,7 @@ $(document).ready(function () {
           $(".top-btn").hide();
         }
         
-      })
+    })
 
 
     const content = "꾸준히 오르는 디자이너 이지윤입니다. \n 감사합니다.";
@@ -34,7 +34,7 @@ $(document).ready(function () {
 
 
         
-
+// 이미지
     let Count = 0;
 
     function opacitySlide(){
