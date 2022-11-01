@@ -85,16 +85,7 @@ html, body{width: 100%; height: 100%;}
 }
 .window-content img{width: 100%;}
 
-/* 반응형 */
-/* @media screen and (max-width:1200px) and (min-width:641px) {
-    #fp-nav ul{margin-left: 120px;}
-    .content .content-wrap img{width: 30%; margin-right: 80px; }
-}
 
-@media screen and (max-width:640px) {
-    #fp-nav ul{margin-left: 20px;}
-    .content .content-wrap img{width: 50%; margin-right: 80px; }
-} */
 
 .section{width: 100%; height: 100%; overflow: hidden;}
 
@@ -123,10 +114,14 @@ html, body{width: 100%; height: 100%;}
 
 .content .content-wrap .slick .slick-item{position: relative; width: 100%; height: 680px; overflow: hidden; box-sizing: border-box; display: flex !important; align-items: center;}
 
-.content .content-wrap .slick .slick-item img{width: 80%; margin: 0 auto; }
+.content .content-wrap .slick .slick-item img{width: 80%; margin: 0 auto; transition: all 1s; border-radius: 50px;}
+/* .content .content-wrap .slick .slick-item:hover img{ filter: grayscale(80%);} */
 
-.content .content-wrap .slick .slick-item p{display: none; position: absolute;}
-.content .content-wrap .slick .slick-item:hover p{position: absolute; width: 300px; height: 50px; background-color: #ddd; top: 20px; left: 30%; line-height: 50px; display: block; }
+/* .content .content-wrap .slick .slick-item .d-txt{position: absolute; top: 50px; width: 40%; height: 40%; left: 0; margin: 0 auto;background-color: rgba(0, 0, 0, 0.3); transform: translate(50%, 40%); border-radius: 50%;}
+.content .content-wrap .slick .slick-item .d-txt p{
+
+} */
+/* .content .content-wrap .slick .slick-item:hover p{width: 300px; height: 50px; background-color: #ddd; display: block; position: absolute;} */
 
 
 /* 슬릭네비 */
@@ -145,3 +140,13 @@ html, body{width: 100%; height: 100%;}
 
 
 
+/* 반응형 */
+/* @media screen and (max-width:1200px) and (min-width:641px) {
+    #fp-nav ul{margin-left: 120px;}
+    .content .content-wrap img{width: 30%; margin-right: 80px; }
+}
+
+@media screen and (max-width:640px) {
+    #fp-nav ul{margin-left: 20px;}
+    .content .content-wrap img{width: 50%; margin-right: 80px; }
+} */

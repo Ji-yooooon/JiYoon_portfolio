@@ -103,7 +103,7 @@ html, body{width: 100%; height: 100%;}
     overflow: hidden;
     background-color: #fff;
     }
-      
+
 
 .summary .summary-wrap .txt-wrap .txt-area:hover{
         animation-play-state: paused;
@@ -112,11 +112,13 @@ html, body{width: 100%; height: 100%;}
     width: 400%; margin-top: 8px;
     display: flex;
     position: relative;
-    animation: scroll 15s infinite linear;       
+    animation: scroll1 12s infinite linear;       
 }
-@keyframes scroll {
+@keyframes scroll1 {
     0%{left: 0;}
-    100%{left: -1445px;}
+    100%{left: -1589px;}
+    /* 0% {transform: translateX(0);}
+    100% {transform: translateX(-35%);} */
 }
 
 .summary .summary-wrap .txt-wrap .txt-area .txt-content{display: flex;}
@@ -157,7 +159,7 @@ html, body{width: 100%; height: 100%;}
 
 
 /* license */
-.license{max-width: 100%; height: 845px; background-color: #fff; position: relative; }
+.license{max-width: 100%; height: 415px; background-color: #fff; position: relative; }
 .license > img{position: absolute; top: -220px; left: -180px; animation: rotate_image 6s ease-in-out infinite;transform-origin: 50% 50%;}
 @keyframes rotate_image{
     100% {
@@ -182,12 +184,66 @@ html, body{width: 100%; height: 100%;}
 .license .license-wrap .l-txt .l-box:nth-child(1) p{line-height: 48px; margin-left: 30px;}
 
 
-.license .license-wrap .l-line{width: 50px; height: 300px; margin: 0 auto; position: relative;}
+.license .license-wrap .l-line{width: 50px; height: 140px; margin: 0 auto; position: relative;}
 .license .license-wrap .l-line p{text-align: center; color: #f57e35; font-size: 18px;}
 
-.license .license-wrap .l-line hr.line{position: absolute; height: 320px; border: none; border: 0.5px dashed #f57e35; margin-left: 24px;}
+.license .license-wrap .l-line hr.line{position: absolute; height: 100px; border: 0.5px dashed #f57e35; margin-left: 24px;}
 
+/* 내 정보 */
+.experience{max-width: 100%; height: 800px; background-color: #fff;}
+.experience .experience-wrap{max-width:1200px; height: 100%; margin: 0 auto; position: relative; }
+.experience .experience-wrap .title{width: 100%; margin: 0 auto; text-align: center; margin-top: 170px;}
+.experience .experience-wrap .title h1{
+    font-size: 85px; font-weight: 900;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: #256d85; 
+    color: #fff; text-align: center;
+}
+.experience .experience-wrap .line{position: absolute; width: 2px; height: 480px; background-color: #f57e35; top: 163px; left: 50%;}
 
+.experience .experience-wrap .ex-txt{
+    display: grid;
+    margin: 0 auto;
+    width: 70%; height: 300px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    position: relative;
+    top: 150px;
+}
+.experience .experience-wrap .ex-txt .ex-txt1,
+.experience .experience-wrap .ex-txt .ex-txt5{
+    text-align: right;
+    margin-right: 30px;
+    position: relative;
+}
+.experience .experience-wrap .ex-txt .ex-txt1::after,
+.experience .experience-wrap .ex-txt .ex-txt5::after{
+    content: ''; position: absolute;
+    width: 13px; height: 13px;
+    border-radius: 50%;
+    right: -39.5px; top: 5px; background-color: #fff;
+    border: 2px solid #f57e35;
+}
+
+.experience .experience-wrap .ex-txt .ex-txt4{
+    margin-left: 30px;
+    position: relative;
+}
+.experience .experience-wrap .ex-txt .ex-txt4::before{
+    content: ''; position: absolute;
+    width: 13px; height: 13px;
+    border-radius: 50%;
+    left: -37.5px; top: 5px; background-color: #256d85;
+    border: 2px solid #256d85;
+}
+
+.experience .experience-wrap .ex-txt p:nth-of-type(1){font-style: italic; font-weight: 600;}
+.experience .experience-wrap .ex-txt p:nth-of-type(2){
+    color: rgb(61, 61, 61);
+    margin-top: 10px;
+}
 
 /* possibility */
 .possibility{max-width: 100%; height: 822px; background-color: #256d85;}
@@ -224,6 +280,8 @@ animation: scroll 15s infinite linear;}
 
 .possibility .poss-wrap .content-wrap .content-bg .content-box .content-title{width: 100%; height: 50px; margin-top: 50px; text-align: center;}
 
+
+
 .possibility .poss-wrap .content-wrap .content-bg .content-box .line{margin: 0 auto; width: 50px; height: 3px; background-color: #256d85; position: relative; top: 15px; border-radius: 10px;}
 
 .possibility .poss-wrap .content-wrap .content-bg .content-box .content-txt{width: 80%; height: 150px; margin: 0 auto; margin-top: 40px;}
@@ -233,16 +291,36 @@ animation: scroll 15s infinite linear;}
 
 /* about */
 .about{max-width: 100%; height: 330px; background-color: #fff;}
-.about .about-wrap{max-width: 1200px; height: 100%; margin: 0 auto; }
-.about .about-wrap .txt{position: relative; width: 500px; height: 200px; margin: 0 auto; top: 91px; text-align: center;}
-.about .about-wrap .txt p{font-size: 29px; color: #256d85; font-weight: 700; display: inline-block; line-height: 70px;}
+.about .about-wrap{max-width: 1200px; height: 100%; margin: 0 auto; display: flex; align-items: center;}
+
+.about .about-wrap .title{
+    width: 430px; height: 140px;  line-height: 140px;
+}
+.about .about-wrap .title h1{
+    font-size: 70px; font-weight: 900;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(121, 121, 121);
+    color: #256d85;
+}
+.about .about-wrap .img{height: 130px;}
+.about .about-wrap .img img{width: 130px;}
+.about .about-wrap .img{text-align: center;}
+
+.about .about-wrap .info{margin-left: 50px;}
+.about .about-wrap .info p{margin: 8px 0;}
+
+/* .about .about-wrap .txt{position: relative; width: 500px; height: 200px; margin: 0 auto; top: 91px; text-align: center;}
+.about .about-wrap .txt p{font-size: 29px; color: #256d85; font-weight: 700; display: inline-block; line-height: 70px;} */
 
 
 /* footer */
 .footer{max-width: 100%; height: 330px; background-color: #fffde7;}
-.footer .pdf-box{width: 146px; height: 61px; background-color: #256d85; border-radius: 10px; margin: 0 auto; position: relative; top: 70px; text-align: center; line-height: 61px;}
-.footer .pdf-box p{color: #fff; font-size: 25px; font-weight: 600;}
-.footer .txt{text-align: center; position: relative; top: 150px; font-size: 22px; color: #256d85; font-weight: 500;}
+.footer .pdf-box{width: 155px; height: 61px; background-color: #256d85; border-radius: 15px; margin: 0 auto; position: relative; top: 70px; text-align: center; line-height: 61px;}
+.footer .pdf-box p{color: #fff; font-size: 20px; font-weight: 500;}
+.footer .txt{text-align: center; position: relative; top: 150px; font-size: 15px; color: #7a7a7a;}
+.footer .txt p:nth-child(2){margin-top: 5px;}
 
 
 /* 탑버튼 */
