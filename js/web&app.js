@@ -26,4 +26,28 @@ $(document).ready(function () {
             //  구역을 불러들이고 나서 스트롤이 끝나면 이벤트가 실행
         }
     })
+
+    // 프로세스
+
+    $(".content .content-wrap .web-content .btn-wrap ul li.pro").click(function(){
+        let i = $(".content .content-wrap .web-content .btn-wrap ul").index(this)
+        
+        $(".window").fadeIn();
+        $(".window-content").eq(i).slideDown().scrollTop(0);
+
+       
+    //모달 스크롤할때 body멈춤 
+        $('body').on('scroll touchmove mousewheel', function(event) {
+        event.stopPropagation();
+        });
+    })
+
+    // 모달
+    $(".window").click(function(){
+        $(".window").fadeOut();
+        $(".window-content").slideUp();
+
+
+        $('body').off('scroll touchmove mousewheel');
+        });
 });
